@@ -6,7 +6,7 @@ pkgs.buildGoModule {
 
   src = "${theSource}/${subdir}";
 
-  vendorHash = "lib.fakeSha256";
+  vendorHash = null;
   proxyVendor = true;
   nativeBuildInputs = [pkgs.gccgo15];
 }
